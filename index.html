@@ -270,9 +270,568 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
-const _0x64cb86=_0x3c40;(function(_0x391c16,_0x52d971){const _0x24c955=_0x3c40,_0xf9941a=_0x391c16();while(!![]){try{const _0x35ce80=-parseInt(_0x24c955(0x185))/0x1+parseInt(_0x24c955(0x16f))/0x2*(-parseInt(_0x24c955(0x1a5))/0x3)+-parseInt(_0x24c955(0x1e6))/0x4+-parseInt(_0x24c955(0x1b8))/0x5*(-parseInt(_0x24c955(0x189))/0x6)+parseInt(_0x24c955(0x1c1))/0x7*(parseInt(_0x24c955(0x149))/0x8)+-parseInt(_0x24c955(0x186))/0x9+parseInt(_0x24c955(0x187))/0xa;if(_0x35ce80===_0x52d971)break;else _0xf9941a['push'](_0xf9941a['shift']());}catch(_0x2ea68a){_0xf9941a['push'](_0xf9941a['shift']());}}}(_0x4667,0x4483f));function debounce(_0x58468d,_0x46e8c6){let _0x1c3865;return function(..._0x276c8b){const _0x5c2dc0=_0x3c40;clearTimeout(_0x1c3865),_0x1c3865=setTimeout(()=>_0x58468d[_0x5c2dc0(0x176)](this,_0x276c8b),_0x46e8c6);};}showLoading();function showLoading(){const _0x9e5226=_0x3c40;document[_0x9e5226(0x1ba)](_0x9e5226(0x16a))['style'][_0x9e5226(0x1fa)]=_0x9e5226(0x183);}function hideLoading(){const _0xf0ec56=_0x3c40;document['getElementById'](_0xf0ec56(0x16a))[_0xf0ec56(0x1ea)][_0xf0ec56(0x1fa)]='none';}const XXX=_0x64cb86(0x1f7),YYY=_0x64cb86(0x1b3),ZZZ='Products!A:S';let cart={},products=[],categories=[],shopName='Shop\x20Name',shopEmail=_0x64cb86(0x1fc),Phone=_0x64cb86(0x1f1),Facebook=_0x64cb86(0x1df),Twitter=_0x64cb86(0x1e8),Instagram='https://www.instagram.com',Linkedin=_0x64cb86(0x1c7),Location='',Currency=_0x64cb86(0x17a),OrderDetailsURL='';function initClient(){const _0x49a682=_0x64cb86;showLoading(),gapi[_0x49a682(0x161)]['init']({'apiKey':XXX,'discoveryDocs':['https://sheets.googleapis.com/$discovery/rest?version=v4']})[_0x49a682(0x16b)](function(){loadSheetsData();},function(_0x3c13f3){const _0xd423b8=_0x49a682;console[_0xd423b8(0x1c9)](_0xd423b8(0x1a4)+_0x3c13f3),hideLoading();});}function loadSheetsData(){const _0x268e04=_0x64cb86;gapi['client'][_0x268e04(0x19e)][_0x268e04(0x1ed)][_0x268e04(0x1dc)]['get']({'spreadsheetId':YYY,'range':ZZZ})['then'](function(_0x282b08){const _0x3fe276=_0x268e04,_0x1f7476=_0x282b08[_0x3fe276(0x1ec)][_0x3fe276(0x1dc)],_0x28b652=document[_0x3fe276(0x1ba)]('productGrid');let _0x331cad=_0x3fe276(0x193),_0x2fb607=_0x3fe276(0x1b5),_0x1919ee=_0x3fe276(0x1cf);for(let _0x3add7c=0x1;_0x3add7c<_0x1f7476[_0x3fe276(0x1d2)];_0x3add7c++){const _0x1fad87=_0x1f7476[_0x3add7c];_0x1fad87[0x11]===_0x3fe276(0x1bc)&&(shopName=_0x1fad87[0x12],updateShopName()),_0x1fad87[0x11]===_0x3fe276(0x15b)&&(shopEmail=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x19f)&&(Phone=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x19b)&&(Location=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x1f2)&&(Currency=_0x1fad87[0x12]),_0x1fad87[0x11]==='OrderDetailsURL'&&(OrderDetailsURL=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x164)&&(Facebook=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x169)&&(Twitter=_0x1fad87[0x12]),_0x1fad87[0x11]==='Instagram'&&(Instagram=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x17b)&&(Linkedin=_0x1fad87[0x12]),_0x1fad87[0x11]===_0x3fe276(0x1a7)&&([_0x331cad,_0x2fb607,_0x1919ee]=_0x1fad87[0x12][_0x3fe276(0x1a9)](','),updateColors(_0x331cad,_0x2fb607,_0x1919ee)),updateShopEmailPhone(),updateSocialMedia(Facebook,Twitter,Instagram,Linkedin);}for(let _0x10f2af=0x1;_0x10f2af<_0x1f7476['length'];_0x10f2af++){const _0x1f84a1=_0x1f7476[_0x10f2af];if(_0x1f84a1[0x0]&&_0x1f84a1[0x1]&&_0x1f84a1[0x2]){products[_0x3fe276(0x1ab)]({'code':_0x1f84a1[0x0],'price':parseFloat(_0x1f84a1[0x1]),'oldPrice':parseFloat(_0x1f84a1[0x4]),'image':_0x1f84a1[0x2],'category':_0x1f84a1[0x3],'kg':parseFloat(_0x1f84a1[0x5])||0x1,'stock':parseInt(_0x1f84a1[0x6])||0x0});!categories[_0x3fe276(0x1b2)](_0x1f84a1[0x3])&&categories[_0x3fe276(0x1ab)](_0x1f84a1[0x3]);const _0x140afb=createProductCard(products['length']-0x1);_0x28b652['appendChild'](_0x140afb);}}renderCategories(),hideLoading();},function(_0x2c7371){const _0x2a220a=_0x268e04;console['error'](_0x2a220a(0x191)+_0x2c7371[_0x2a220a(0x1ec)][_0x2a220a(0x155)]['message']),hideLoading();});}function updateColors(_0x324b74,_0x2d834f,_0x4827c5){const _0x2b3983=_0x64cb86;document[_0x2b3983(0x1f5)][_0x2b3983(0x1ea)]['setProperty'](_0x2b3983(0x1a2),_0x324b74),document['documentElement'][_0x2b3983(0x1ea)][_0x2b3983(0x168)](_0x2b3983(0x17f),_0x2d834f),document[_0x2b3983(0x1f5)][_0x2b3983(0x1ea)][_0x2b3983(0x168)](_0x2b3983(0x15c),_0x4827c5),document[_0x2b3983(0x197)]('.custom-header')[_0x2b3983(0x1ea)]['backgroundColor']=_0x324b74,document[_0x2b3983(0x197)](_0x2b3983(0x170))[_0x2b3983(0x1ea)][_0x2b3983(0x1b1)]=_0x4827c5,document[_0x2b3983(0x197)](_0x2b3983(0x1a1))['style'][_0x2b3983(0x1af)]=_0x2d834f,document[_0x2b3983(0x197)](_0x2b3983(0x1a1))[_0x2b3983(0x1ea)]['color']=_0x324b74,document['querySelectorAll']('.product-heading,\x20.btn-outline-secondary')['forEach'](_0x505407=>{const _0x23767c=_0x2b3983;_0x505407['style'][_0x23767c(0x1b1)]=_0x324b74,_0x505407['style'][_0x23767c(0x184)]=_0x324b74;}),document['querySelectorAll'](_0x2b3983(0x192))[_0x2b3983(0x1f0)](_0xb8fb6e=>{const _0x175857=_0x2b3983;_0xb8fb6e['style'][_0x175857(0x1b1)]=_0x4827c5,_0xb8fb6e['style'][_0x175857(0x1af)]=_0x324b74;}),document['querySelector']('.footer')['style'][_0x2b3983(0x1af)]=_0x324b74,document[_0x2b3983(0x197)](_0x2b3983(0x1c4))[_0x2b3983(0x1ea)][_0x2b3983(0x1b1)]=_0x4827c5;}function _0x4667(){const _0x3fec15=['querySelectorAll','Email','--accent-color','twitterLink','Your\x20cart\x20is\x20empty!','div','https://wa.me/','client','linkedinLink','parentElement','Facebook','<ul\x20class=\x22list-group\x22>',',\x20-1)\x22>-</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22modal-quantity-','<button\x20class=\x22btn\x20btn-outline-secondary\x20m-1\x22\x20onclick=\x22setCategoryAndFilter(\x27','setProperty','Twitter','loading-overlay','then','About\x20','value','Order\x20Number:\x20','922696CuzJve','.navbar-brand','innerHTML','Error:','©\x202024\x20','trim','cartModalBody','apply','appendChild','none','target','AED','Linkedin','All','open','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','--secondary-color','Please\x20enter\x20your\x20phone\x20number','\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-primary\x22>','<span\x20style=\x22color:\x20red;\x22\x20class=\x22text-decoration-line-through\x22>','flex','borderColor','31073LFsBJz','816912fUbryy','10808210TxqvcT','getFullYear','37038BKYYTK','cartModal','toFixed','proceedToWhatsApp','load','<br>Phone:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Shipment\x20Status:\x20','tel:+','Error:\x20','.btn-outline-secondary:hover','#1976D2','oldPrice','getMinutes','/Kg','querySelector','Address','disabled','whatsappButton','Location','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Email:\x20','textContent','sheets','Phone','Modal','body','--primary-color','toLowerCase','Error\x20initializing\x20GAPI\x20client:\x20','3DSgcCt',',\x20-1)\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22bi\x20bi-dash\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mx-2\x20text-center\x22\x20style=\x22min-width:\x2060px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22quantity-','Colour','className','split','<li\x20class=\x22list-group-item\x20d-flex\x20justify-content-between\x20align-items-center\x20fw-bold\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Total\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22modal-grand-total\x22>','push','emailInput','getInstance','btn-primary','backgroundColor','btn-outline-secondary','color','includes','1jEm8NKXiqlKDhpzb7RXQElASiLo4AgMF8kFsZkbLcnM','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','#E3F2FD','#productCategories\x20.btn-primary','callButton','55aBuLRc','</span><br>','getElementById','entries','ShopName','Status','keys','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22spinner-border\x20spinner-border-sm\x20me-2\x22\x20role=\x22status\x22\x20aria-hidden=\x22true\x22></span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Processing\x20Order...\x0a\x20\x20\x20\x20\x20\x20\x20\x20','226842oimBCv','.product-card','hide','.footer','.footer\x20.text-center\x20p','_blank','https://www.linkedin.com','slice','log','Name','</button>','classList','searchInput','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22modal-total-','#FFFFFF','cartButton','out-of-stock','length','Please\x20enter\x20your\x20address','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Phone:\x20','<div\x20class=\x22card\x20h-100\x20product-card\x20','glocation','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x22\x20class=\x22card-img-top\x20product-image\x22\x20alt=\x22','stock','Proceed\x20to\x20Cart\x20(','Order\x20submission\x20failed.\x20Please\x20try\x20again.','values','formGoogleSendEmail','nameInput','https://www.facebook.com','Order\x20submission\x20failed','.footer\x20p','price','</h5>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22card-text\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','quantity-','block','1398832ErXYec',',\x201)\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22bi\x20bi-plus\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','https://www.twitter.com','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','style','padStart','result','spreadsheets','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x20d-flex\x20flex-column\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22card-title\x22>','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn\x20btn-sm\x20btn-outline-secondary\x20ms-2\x22\x20onclick=\x22changeQuantity(','forEach','000000','Currency','code','add','documentElement','<p\x20class=\x22text-danger\x20fw-bold\x22>Out\x20of\x20Stock</p>','AIzaSyByyiuwuJBysKl2xtvl6wCw6Gz9shyDzXs','Please\x20enter\x20your\x20email\x20address','join','display','getMonth','info@yourshop.com','modal-grand-total','\x20each\x20=\x20','16NhJMmX','getDate','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','max','\x20-\x20','OrderNumber','<li\x20class=\x22list-group-item\x20d-flex\x20justify-content-between\x20align-items-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn\x20btn-sm\x20btn-outline-secondary\x20me-2\x22\x20onclick=\x22changeQuantity(','href','success','modal-quantity-','getSeconds','min','error','append','category','.footer\x20.col-md-4:nth-child(2)\x20p','modal-total-'];_0x4667=function(){return _0x3fec15;};return _0x4667();}function createProductCard(_0x17f795){const _0xf14725=_0x64cb86,_0x271806=products[_0x17f795],_0x596b41=_0x271806[_0xf14725(0x1d9)]===0x0,_0xcb4e77=document['createElement'](_0xf14725(0x15f));return _0xcb4e77[_0xf14725(0x1a8)]='col',_0xcb4e77[_0xf14725(0x171)]=_0xf14725(0x1d5)+(_0x596b41?_0xf14725(0x1d1):'')+_0xf14725(0x1b4)+_0x271806['image']+_0xf14725(0x1d8)+_0x271806['code']+_0xf14725(0x1ee)+_0x271806[_0xf14725(0x1f3)]+_0xf14725(0x1e3)+(_0x271806[_0xf14725(0x194)]>_0x271806[_0xf14725(0x1e2)]?_0xf14725(0x182)+Currency+'\x20'+_0x271806[_0xf14725(0x194)][_0xf14725(0x18b)](0x2)+_0xf14725(0x1b9):'')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22text-primary\x20fw-bold\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+Currency+'\x20'+_0x271806[_0xf14725(0x1e2)][_0xf14725(0x18b)](0x2)+_0xf14725(0x14b)+(_0x271806['kg']&&_0x271806['kg']!==0x1?_0xf14725(0x196):'')+_0xf14725(0x17e)+(_0x596b41?_0xf14725(0x1f6):'<div\x20class=\x22mt-auto\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-flex\x20align-items-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn\x20btn-outline-secondary\x22\x20type=\x22button\x22\x20onclick=\x22changeQuantity('+_0x17f795+_0xf14725(0x1a6)+_0x17f795+'\x22>'+(cart[_0x17f795]||0x0)+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn\x20btn-outline-secondary\x22\x20type=\x22button\x22\x20onclick=\x22changeQuantity('+_0x17f795+_0xf14725(0x1e7))+_0xf14725(0x1e9),_0xcb4e77;}function renderCategories(){const _0x5d8455=_0x64cb86,_0xc43142=document[_0x5d8455(0x1ba)]('productCategories');_0xc43142[_0x5d8455(0x171)]='<button\x20class=\x22btn\x20btn-primary\x20m-1\x22\x20onclick=\x22setCategoryAndFilter(\x27All\x27)\x22>All</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+categories['map'](_0x525376=>_0x5d8455(0x167)+_0x525376+'\x27)\x22>'+_0x525376+_0x5d8455(0x1cb))[_0x5d8455(0x1f9)]('');}function filterProducts(){const _0x511cf7=_0x64cb86,_0x13ee6e=document[_0x511cf7(0x1ba)](_0x511cf7(0x1cd))[_0x511cf7(0x16d)][_0x511cf7(0x1a3)](),_0x531171=document[_0x511cf7(0x197)](_0x511cf7(0x1b6))[_0x511cf7(0x19d)],_0x2bb1b9=document['getElementById']('productGrid');_0x2bb1b9[_0x511cf7(0x171)]='',products['forEach']((_0x172cd6,_0xa1dff7)=>{const _0x29faef=_0x511cf7,_0x50f32e=_0x531171===_0x29faef(0x17c)||_0x172cd6[_0x29faef(0x157)]===_0x531171,_0x4e6511=_0x172cd6[_0x29faef(0x1f3)]['toLowerCase']()[_0x29faef(0x1b2)](_0x13ee6e);if(_0x50f32e&&_0x4e6511){const _0x237637=createProductCard(_0xa1dff7);_0x2bb1b9[_0x29faef(0x177)](_0x237637);}});}function setCategoryAndFilter(_0xc1ef62){const _0x5e4129=_0x64cb86,_0x506602=document[_0x5e4129(0x15a)]('#productCategories\x20.btn');_0x506602[_0x5e4129(0x1f0)](_0x28ed3c=>{const _0x59009b=_0x5e4129;_0x28ed3c['classList']['remove'](_0x59009b(0x1ae)),_0x28ed3c[_0x59009b(0x1cc)][_0x59009b(0x1f4)](_0x59009b(0x1b0));}),event[_0x5e4129(0x179)][_0x5e4129(0x1cc)]['remove'](_0x5e4129(0x1b0)),event['target'][_0x5e4129(0x1cc)]['add'](_0x5e4129(0x1ae)),filterProducts();}function updateShopName(){const _0x1cf5e7=_0x64cb86;document['querySelector'](_0x1cf5e7(0x170))[_0x1cf5e7(0x19d)]=shopName,document[_0x1cf5e7(0x197)]('.footer\x20h5')[_0x1cf5e7(0x19d)]=_0x1cf5e7(0x16c)+shopName,document['querySelector'](_0x1cf5e7(0x1e1))[_0x1cf5e7(0x19d)]=shopName+'\x20is\x20dedicated\x20to\x20providing\x20high-quality\x20products\x20and\x20excellent\x20customer\x20service.',document['querySelector'](_0x1cf5e7(0x1c5))[_0x1cf5e7(0x19d)]=_0x1cf5e7(0x173)+shopName+'.\x20All\x20rights\x20reserved.';}function updateShopEmailPhone(){const _0x3de8d9=_0x64cb86;document['querySelector'](_0x3de8d9(0x158))[_0x3de8d9(0x171)]='Email:\x20'+shopEmail+_0x3de8d9(0x18e)+Phone,document['getElementById'](_0x3de8d9(0x1b7))[_0x3de8d9(0x150)]=_0x3de8d9(0x190)+Phone,document[_0x3de8d9(0x1ba)](_0x3de8d9(0x19a))[_0x3de8d9(0x150)]=_0x3de8d9(0x160)+Phone,document['getElementById'](_0x3de8d9(0x1d6))[_0x3de8d9(0x150)]=''+Location;}function updateSocialMedia(_0x2e599c,_0x10426d,_0x73fe1,_0xc60b03){const _0x207c89=_0x64cb86;document[_0x207c89(0x1ba)]('facebookLink')['href']=_0x2e599c,document[_0x207c89(0x1ba)](_0x207c89(0x15d))[_0x207c89(0x150)]=_0x10426d,document[_0x207c89(0x1ba)]('instagramLink')[_0x207c89(0x150)]=_0x73fe1,document[_0x207c89(0x1ba)](_0x207c89(0x162))[_0x207c89(0x150)]=_0xc60b03;}function changeQuantity(_0x558551,_0x3cc5e7){const _0x3feb44=_0x64cb86,_0x192cb9=products[_0x558551];if(_0x192cb9[_0x3feb44(0x1d9)]===0x0)return;const _0xaf4d96=_0x192cb9['kg'],_0x324727=document['getElementById'](_0x3feb44(0x1e4)+_0x558551),_0x1e9221=document['getElementById'](_0x3feb44(0x152)+_0x558551);let _0x184400=cart[_0x558551]||0x0,_0x44827f=_0x184400+_0x3cc5e7*_0xaf4d96;_0x44827f=Math[_0x3feb44(0x154)](Math[_0x3feb44(0x14c)](0x0,_0x44827f),_0x192cb9[_0x3feb44(0x1d9)]);_0x44827f===0x0?delete cart[_0x558551]:cart[_0x558551]=_0x44827f;_0x324727&&(_0x324727['textContent']=_0x44827f);if(_0x1e9221){_0x1e9221[_0x3feb44(0x19d)]=_0x44827f;const _0x200fdb=_0x192cb9[_0x3feb44(0x1e2)]*_0x44827f,_0xb1dc10=document[_0x3feb44(0x1ba)](_0x3feb44(0x159)+_0x558551);_0xb1dc10&&(_0xb1dc10[_0x3feb44(0x19d)]=Currency+'\x20'+_0x200fdb['toFixed'](0x2));let _0x38f50e=0x0;for(const [_0x2b07d9,_0xb3595b]of Object[_0x3feb44(0x1bb)](cart)){_0x38f50e+=products[_0x2b07d9][_0x3feb44(0x1e2)]*_0xb3595b;}const _0x4af1dc=document[_0x3feb44(0x1ba)](_0x3feb44(0x147));_0x4af1dc&&(_0x4af1dc[_0x3feb44(0x19d)]=Currency+'\x20'+_0x38f50e[_0x3feb44(0x18b)](0x2));}updateCartButton();}function updateCartButton(){const _0x22dcc4=_0x64cb86,_0x949577=document['getElementById'](_0x22dcc4(0x1d0)),_0x4c463f=Object[_0x22dcc4(0x1dc)](cart)['reduce']((_0x3ef6d9,_0x4b60f5)=>_0x3ef6d9+_0x4b60f5,0x0),_0x5a09a2=Object[_0x22dcc4(0x1bb)](cart)['reduce']((_0x4163f7,[_0x2f4570,_0x1ef568])=>{return _0x4163f7+products[_0x2f4570]['price']*_0x1ef568;},0x0);_0x4c463f>0x0?(_0x949577['style'][_0x22dcc4(0x1fa)]=_0x22dcc4(0x1e5),_0x949577['textContent']=_0x22dcc4(0x1da)+_0x4c463f+'\x20items,\x20'+Currency+'\x20'+_0x5a09a2['toFixed'](0x2)+')'):_0x949577['style']['display']=_0x22dcc4(0x178);}function clearCart(){const _0x14e603=_0x64cb86;cart={},products[_0x14e603(0x1f0)]((_0x309768,_0xc2e17c)=>{const _0x5c8df5=_0x14e603,_0x5a9ad9=document[_0x5c8df5(0x1ba)](_0x5c8df5(0x1e4)+_0xc2e17c);_0x5a9ad9&&(_0x5a9ad9['textContent']='0');}),updateCartButton();const _0x51db80=bootstrap['Modal'][_0x14e603(0x1ad)](document[_0x14e603(0x1ba)]('cartModal'));_0x51db80&&_0x51db80['hide']();}function _0x3c40(_0x5abfa1,_0x39c5d5){const _0x466716=_0x4667();return _0x3c40=function(_0x3c4066,_0x3ba647){_0x3c4066=_0x3c4066-0x147;let _0x1521ca=_0x466716[_0x3c4066];return _0x1521ca;},_0x3c40(_0x5abfa1,_0x39c5d5);}function showCartModal(){const _0x1fb295=_0x64cb86,_0x2337c5=document[_0x1fb295(0x1ba)](_0x1fb295(0x175));let _0x5cba1c=_0x1fb295(0x165),_0xcbb7e8=0x0;for(const [_0x5bf029,_0x24ad2e]of Object[_0x1fb295(0x1bb)](cart)){const _0x4ee09d=products[_0x5bf029],_0x58dbf5=_0x4ee09d[_0x1fb295(0x1e2)]*_0x24ad2e;_0xcbb7e8+=_0x58dbf5,_0x5cba1c+=_0x1fb295(0x14f)+_0x5bf029+_0x1fb295(0x166)+_0x5bf029+'\x22>'+_0x24ad2e+_0x1fb295(0x1ef)+_0x5bf029+',\x201)\x22>+</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x4ee09d[_0x1fb295(0x1f3)]+_0x1fb295(0x181)+Currency+'\x20'+_0x4ee09d[_0x1fb295(0x1e2)][_0x1fb295(0x18b)](0x2)+'\x20'+(_0x4ee09d['kg']&&_0x4ee09d['kg']!==0x1?'/Kg':'')+_0x1fb295(0x1ce)+_0x5bf029+'\x22>'+Currency+'\x20'+_0x58dbf5['toFixed'](0x2)+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>';}_0x5cba1c+=_0x1fb295(0x1aa)+Currency+'\x20'+_0xcbb7e8[_0x1fb295(0x18b)](0x2)+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20</ul>',_0x2337c5['innerHTML']=_0x5cba1c;const _0x2a77c9=new bootstrap[(_0x1fb295(0x1a0))](document[_0x1fb295(0x1ba)](_0x1fb295(0x18a)));_0x2a77c9['show']();}function searchProducts(){const _0x35a93a=_0x64cb86,_0x5ccf4b=document['getElementById'](_0x35a93a(0x1cd))['value'][_0x35a93a(0x1a3)](),_0x4373f8=document[_0x35a93a(0x15a)](_0x35a93a(0x1c2));_0x4373f8['forEach']((_0x150b52,_0x397467)=>{const _0x3a8a37=_0x35a93a,_0x463079=products[_0x397467]['code'][_0x3a8a37(0x1a3)]();_0x463079[_0x3a8a37(0x1b2)](_0x5ccf4b)?_0x150b52[_0x3a8a37(0x163)][_0x3a8a37(0x1ea)][_0x3a8a37(0x1fa)]='':_0x150b52['parentElement'][_0x3a8a37(0x1ea)][_0x3a8a37(0x1fa)]='none';});}document[_0x64cb86(0x1ba)](_0x64cb86(0x1d0))['onclick']=function(){const _0x355d9a=_0x64cb86;Object[_0x355d9a(0x1be)](cart)[_0x355d9a(0x1d2)]>0x0?showCartModal():alert(_0x355d9a(0x15e));};function generateOrderNumber(){const _0x1f94f8=_0x64cb86,_0x2ee283=new Date(),_0x2fd6fb=_0x2ee283[_0x1f94f8(0x188)]()['toString']()[_0x1f94f8(0x1c8)](-0x2),_0x26c59b=String(_0x2ee283[_0x1f94f8(0x1fb)]()+0x1)[_0x1f94f8(0x1eb)](0x2,'0'),_0x2aad7d=String(_0x2ee283[_0x1f94f8(0x14a)]())[_0x1f94f8(0x1eb)](0x2,'0'),_0x4df54e=String(_0x2ee283['getHours']())[_0x1f94f8(0x1eb)](0x2,'0'),_0x1197c1=String(_0x2ee283[_0x1f94f8(0x195)]())[_0x1f94f8(0x1eb)](0x2,'0'),_0x4d1abe=String(_0x2ee283[_0x1f94f8(0x153)]())['padStart'](0x2,'0');return'ORD-'+_0x2fd6fb+_0x26c59b+_0x2aad7d+'-'+_0x4df54e+_0x1197c1+_0x4d1abe;}function setOrderButtonState(_0x2fd39b){const _0x4eb72e=_0x64cb86,_0x3d005c=document[_0x4eb72e(0x1ba)](_0x4eb72e(0x18c));_0x2fd39b?(_0x3d005c[_0x4eb72e(0x199)]=!![],_0x3d005c['innerHTML']=_0x4eb72e(0x1c0)):(_0x3d005c['disabled']=![],_0x3d005c[_0x4eb72e(0x171)]='Place\x20Order');}document[_0x64cb86(0x1ba)](_0x64cb86(0x18c))['onclick']=async function(){const _0x475e03=_0x64cb86,_0x1af991=document[_0x475e03(0x1ba)](_0x475e03(0x1de))[_0x475e03(0x16d)][_0x475e03(0x174)](),_0xae389e=document[_0x475e03(0x1ba)]('phoneInput')[_0x475e03(0x16d)][_0x475e03(0x174)](),_0x162abe=document[_0x475e03(0x1ba)](_0x475e03(0x1ac))[_0x475e03(0x16d)][_0x475e03(0x174)](),_0x1843f1=document[_0x475e03(0x1ba)]('addressInput')['value'][_0x475e03(0x174)]();if(!_0x1af991){alert('Please\x20enter\x20your\x20name');return;}if(!_0xae389e){alert(_0x475e03(0x180));return;}if(!_0x162abe){alert(_0x475e03(0x1f8));return;}if(!_0x1843f1){alert(_0x475e03(0x1d3));return;}setOrderButtonState(!![]);const _0xbb4b8e=generateOrderNumber();let _0x256c45=new FormData();_0x256c45['append'](_0x475e03(0x14e),_0xbb4b8e),_0x256c45[_0x475e03(0x156)](_0x475e03(0x1ca),_0x1af991),_0x256c45[_0x475e03(0x156)](_0x475e03(0x19f),_0xae389e),_0x256c45[_0x475e03(0x156)]('Email',_0x162abe),_0x256c45[_0x475e03(0x156)](_0x475e03(0x198),_0x1843f1),_0x256c45[_0x475e03(0x156)](_0x475e03(0x1dd),shopEmail);let _0x1656f5=_0x475e03(0x16e)+_0xbb4b8e+'\x0a\x0aOrder\x20Details:\x0a',_0x57bc47=0x0,_0x2e2d13=[];for(const [_0x41312f,_0x42324a]of Object['entries'](cart)){const _0x186281=products[_0x41312f],_0x243857=_0x186281['price']*_0x42324a;_0x57bc47+=_0x243857,_0x1656f5+=_0x42324a+'x\x20'+_0x186281['code']+_0x475e03(0x14d)+Currency+'\x20'+_0x186281[_0x475e03(0x1e2)][_0x475e03(0x18b)](0x2)+_0x475e03(0x148)+Currency+'\x20'+_0x243857[_0x475e03(0x18b)](0x2)+'\x0a',_0x2e2d13['push'](_0x42324a+'x\x20'+_0x186281[_0x475e03(0x1f3)]);}_0x1656f5+='\x0aTotal:\x20'+Currency+'\x20'+_0x57bc47[_0x475e03(0x18b)](0x2),_0x256c45[_0x475e03(0x156)]('Order',_0x1656f5),_0x256c45[_0x475e03(0x156)](_0x475e03(0x1bd),'Pending'),_0x256c45[_0x475e03(0x156)]('OrderStatusLink',''+OrderDetailsURL+_0xbb4b8e);try{const _0x1ec9da=await fetch('https://script.google.com/macros/s/AKfycbywEnaIsy3rN0KwuPmOYXegnR9nv0vUNMjIRPe13dLa1ff5EbYuHBnyKCK3YDUD5Zht/exec',{'method':'POST','body':_0x256c45}),_0x43afd7=await _0x1ec9da['json']();if(_0x43afd7['result']===_0x475e03(0x151)){const _0x37bdca=_0x475e03(0x16e)+_0xbb4b8e+'\x0a\x0aOrder\x20Details:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Name:\x20'+_0x1af991+_0x475e03(0x1d4)+_0xae389e+_0x475e03(0x19c)+_0x162abe+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x1843f1?'Address:\x20'+_0x1843f1+'\x0a':'')+_0x475e03(0x1d7)+_0x1656f5+_0x475e03(0x18f)+OrderDetailsURL+_0xbb4b8e+_0x475e03(0x1bf),_0x29a1a4=encodeURIComponent(_0x37bdca),_0x40bcfa=_0x475e03(0x160)+Phone+'?text='+_0x29a1a4;setOrderButtonState(![]),window[_0x475e03(0x17d)](_0x40bcfa,_0x475e03(0x1c6)),clearCart();const _0x156516=bootstrap['Modal'][_0x475e03(0x1ad)](document['getElementById'](_0x475e03(0x18a)));_0x156516&&_0x156516[_0x475e03(0x1c3)]();}else throw new Error(_0x475e03(0x1e0));}catch(_0xb7b583){console['error'](_0x475e03(0x172),_0xb7b583),alert(_0x475e03(0x1db)),setOrderButtonState(![]);}},gapi[_0x64cb86(0x18d)](_0x64cb86(0x161),initClient),document[_0x64cb86(0x1ba)](_0x64cb86(0x1cd))['oninput']=debounce(filterProducts,0x12c);
+	function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+		showLoading();
+		function showLoading() {
+    document.getElementById('loading-overlay').style.display = 'flex';
+}
+function hideLoading() {
+    document.getElementById('loading-overlay').style.display = 'none';
+}
+        // Replace with your Google Sheets API key
+        const XXX = 'AIzaSyByyiuwuJBysKl2xtvl6wCw6Gz9shyDzXs';
+        // Replace with your Google Sheet ID
+        const YYY = '1jEm8NKXiqlKDhpzb7RXQElASiLo4AgMF8kFsZkbLcnM';
+        // Replace with your sheet name and extend the range to include columns R and S
+        const ZZZ = 'Products!A:S';
+
+        let cart = {};
+        let products = [];
+        let categories = [];
+        let shopName = 'Shop Name'; // Default value
+        let shopEmail = 'info@yourshop.com'; // Default value
+        let Phone = '000000'; // Default value
+		let Facebook = 'https://www.facebook.com'; // Default value
+		let Twitter = 'https://www.twitter.com'; // Default value
+		let Instagram = 'https://www.instagram.com'; // Default value
+		let Linkedin = 'https://www.linkedin.com'; // Default value
+		let Location = ''; // Default value
+		let Currency = 'AED'; // Default value
+		let OrderDetailsURL = ''; // Default value
+
+        function initClient() {
+    showLoading(); // Show loading animation
+    gapi.client.init({
+        'apiKey': XXX,
+        'discoveryDocs': ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+    }).then(function () {
+        loadSheetsData();
+    }, function (error) {
+        console.log('Error initializing GAPI client: ' + error);
+        hideLoading(); // Hide loading animation in case of error
+    });
+}
+
+
+
+function loadSheetsData() {
+    gapi.client.sheets.spreadsheets.values.get({
+        spreadsheetId: YYY,
+        range: ZZZ
+    }).then(function (response) {
+        const data = response.result.values;
+        const productGrid = document.getElementById('productGrid');
+
+        // Initialize variables for color customization
+        let primaryColor = '#1976D2';
+        let secondaryColor = '#E3F2FD';
+        let accentColor = '#FFFFFF';
+
+        // Process configuration rows
+        for (let i = 1; i < data.length; i++) {
+            const row = data[i];
+            if (row[17] === 'ShopName') {
+                shopName = row[18];
+                updateShopName();
+            }
+            // ... (keep existing configuration processing)
+        }
+
+        // Process product data
+        for (let i = 1; i < data.length; i++) {
+            const row = data[i];
+            if (row[0] && row[1]) { // Check if basic product info exists
+                const images = [row[2]]; // Main image from column C
+                
+                // Add additional images if they exist
+                if (row[7]) images.push(row[7]); // Image from column H
+                if (row[8]) images.push(row[8]); // Image from column I
+                if (row[9]) images.push(row[9]); // Image from column J
+
+                products.push({ 
+                    code: row[0], 
+                    price: parseFloat(row[1]), 
+                    images: images.filter(img => img), // Filter out empty values
+                    oldPrice: parseFloat(row[4]), 
+                    category: row[3],
+                    kg: parseFloat(row[5]) || 1,
+                    stock: parseInt(row[6]) || 0
+                });
+
+                if (!categories.includes(row[3])) {
+                    categories.push(row[3]);
+                }
+                const productCard = createProductCard(products.length - 1);
+                productGrid.appendChild(productCard);
+            }
+        }
+
+        renderCategories();
+        initializeCarousels();
+        hideLoading();
+    }, function (response) {
+        console.error('Error: ' + response.result.error.message);
+        hideLoading();
+    });
+}
+
+// Add this function to initialize all carousels
+function initializeCarousels() {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        new bootstrap.Carousel(carousel, {
+            interval: false,  // Disable auto-sliding
+            wrap: true       // Keep continuous loop enabled
+        });
+    });
+}
+
+function updateColors(primaryColor, secondaryColor, accentColor) {
+    document.documentElement.style.setProperty('--primary-color', primaryColor);
+    document.documentElement.style.setProperty('--secondary-color', secondaryColor);
+    document.documentElement.style.setProperty('--accent-color', accentColor);
+
+    // Update inline styles if necessary
+    document.querySelector('.custom-header').style.backgroundColor = primaryColor;
+    document.querySelector('.navbar-brand').style.color = accentColor;
+    document.querySelector('body').style.backgroundColor = secondaryColor;
+    document.querySelector('body').style.color = primaryColor;
+    document.querySelectorAll('.product-heading, .btn-outline-secondary').forEach(element => {
+        element.style.color = primaryColor;
+        element.style.borderColor = primaryColor;
+    });
+    document.querySelectorAll('.btn-outline-secondary:hover').forEach(element => {
+        element.style.color = accentColor;
+        element.style.backgroundColor = primaryColor;
+    });
+    document.querySelector('.footer').style.backgroundColor = primaryColor;
+    document.querySelector('.footer').style.color = accentColor;
+}
+
+
+        
+		// Update the createProductCard function to display KG information
+function createProductCard(index) {
+    const product = products[index];
+    const isOutOfStock = product.stock === 0;
+    const productCard = document.createElement('div');
+    productCard.className = 'col';
+    
+    // Create unique ID for this product's carousel
+    const carouselId = `carousel-${index}`;
+    
+    // Generate carousel indicators
+    const indicators = product.images.map((_, imgIndex) => `
+        <button type="button" 
+                data-bs-target="#${carouselId}" 
+                data-bs-slide-to="${imgIndex}" 
+                ${imgIndex === 0 ? 'class="active" aria-current="true"' : ''} 
+                aria-label="Slide ${imgIndex + 1}">
+        </button>
+    `).join('');
+    
+    // Generate carousel items
+    const carouselItems = product.images.map((img, imgIndex) => `
+        <div class="carousel-item ${imgIndex === 0 ? 'active' : ''}">
+            <img src="${img}" class="d-block w-100 product-image" alt="${product.code}">
+        </div>
+    `).join('');
+
+    productCard.innerHTML = `
+        <div class="card h-100 product-card ${isOutOfStock ? 'out-of-stock' : ''}">
+            <div id="${carouselId}" class="carousel slide" data-bs-touch="true">
+                <div class="carousel-indicators">
+                    ${indicators}
+                </div>
+                <div class="carousel-inner">
+                    ${carouselItems}
+                </div>
+                ${product.images.length > 1 ? `
+                    <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                ` : ''}
+            </div>
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">${product.code}</h5>
+                <p class="card-text">
+                    ${product.oldPrice > product.price ? 
+                        `<span style="color: red;" class="text-decoration-line-through">${Currency} ${product.oldPrice.toFixed(2)}</span><br>` : 
+                        ''}
+                    <span class="text-primary fw-bold">
+                        ${Currency} ${product.price.toFixed(2)}
+                        ${product.kg && product.kg !== 1 ? `/Kg` : ''}
+                    </span>
+                </p>
+                ${isOutOfStock ? 
+                    '<p class="text-danger fw-bold">Out of Stock</p>' :
+                    `<div class="mt-auto">
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary" type="button" onclick="changeQuantity(${index}, -1)">
+                                <i class="bi bi-dash"></i>
+                            </button>
+                            <div class="mx-2 text-center" style="min-width: 60px;">
+                                <span id="quantity-${index}">${cart[index] || 0}</span>
+                            </div>
+                            <button class="btn btn-outline-secondary" type="button" onclick="changeQuantity(${index}, 1)">
+                                <i class="bi bi-plus"></i>
+                            </button>
+                        </div>
+                    </div>`
+                }
+            </div>
+        </div>`;
+    return productCard;
+}
+
+        function renderCategories() {
+    const categoryContainer = document.getElementById('productCategories');
+    categoryContainer.innerHTML = 
+        `<button class="btn btn-primary m-1" onclick="setCategoryAndFilter('All')">All</button>
+        ${categories.map(category => 
+            `<button class="btn btn-outline-secondary m-1" onclick="setCategoryAndFilter('${category}')">${category}</button>`
+        ).join('')}`;
+}
+
+        function filterProducts() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const currentCategory = document.querySelector('#productCategories .btn-primary').textContent;
+    const productGrid = document.getElementById('productGrid');
+    productGrid.innerHTML = '';
+
+    products.forEach((product, index) => {
+        const matchesCategory = currentCategory === 'All' || product.category === currentCategory;
+        const matchesSearch = product.code.toLowerCase().includes(searchInput);
+
+        if (matchesCategory && matchesSearch) {
+            const productCard = createProductCard(index);
+            productGrid.appendChild(productCard);
+        }
+    });
+}
+function setCategoryAndFilter(category) {
+    const buttons = document.querySelectorAll('#productCategories .btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-outline-secondary');
+    });
+    event.target.classList.remove('btn-outline-secondary');
+    event.target.classList.add('btn-primary');
+    filterProducts();
+}
+        function updateShopName() {
+            // Update shop name in navbar
+            document.querySelector('.navbar-brand').textContent = shopName;
+
+            // Update shop name in footer
+            document.querySelector('.footer h5').textContent = 'About ' + shopName;
+            document.querySelector('.footer p').textContent = shopName + ' is dedicated to providing high-quality products and excellent customer service.';
+            document.querySelector('.footer .text-center p').textContent = '© 2024 ' + shopName + '. All rights reserved.';
+        }
+
+        function updateShopEmailPhone() {
+            // Update shop email in footer
+            document.querySelector('.footer .col-md-4:nth-child(2) p').innerHTML = `Email: ${shopEmail}<br>Phone: ${Phone}`;
+            document.getElementById('callButton').href = `tel:+${Phone}`;
+            document.getElementById('whatsappButton').href = `https://wa.me/${Phone}`;
+			document.getElementById('glocation').href = `${Location}`;
+        }
+        function updateSocialMedia(Facebook,Twitter,Instagram,Linkedin) {
+			document.getElementById('facebookLink').href = Facebook; 
+			document.getElementById('twitterLink').href = Twitter; 
+			document.getElementById('instagramLink').href = Instagram; 
+			document.getElementById('linkedinLink').href = Linkedin; 
+			 
+			}
+
+function changeQuantity(index, change) {
+    const product = products[index];
+    
+    // Check if product is out of stock
+    if (product.stock === 0) {
+        return; // Do nothing if out of stock
+    }
+    
+    const kgIncrement = product.kg;
+    const quantitySpan = document.getElementById(`quantity-${index}`);
+    const modalQuantitySpan = document.getElementById(`modal-quantity-${index}`);
+    
+    let currentQuantity = cart[index] || 0;
+    let newQuantity = currentQuantity + (change * kgIncrement);
+    
+    // Ensure new quantity doesn't exceed available stock
+    newQuantity = Math.min(Math.max(0, newQuantity), product.stock);
+
+    if (newQuantity === 0) {
+        delete cart[index];
+    } else {
+        cart[index] = newQuantity;
+    }
+
+    // Update main product grid
+    if (quantitySpan) {
+        quantitySpan.textContent = newQuantity;
+    }
+
+    // Update cart modal if it's open
+    if (modalQuantitySpan) {
+        modalQuantitySpan.textContent = newQuantity;
+        const itemTotal = product.price * newQuantity;
+        const modalTotalSpan = document.getElementById(`modal-total-${index}`);
+        if (modalTotalSpan) {
+            modalTotalSpan.textContent = `${Currency} ${itemTotal.toFixed(2)}`;
+        }
+
+        // Recalculate and update grand total
+        let grandTotal = 0;
+        for (const [idx, qty] of Object.entries(cart)) {
+            grandTotal += products[idx].price * qty;
+        }
+        const modalGrandTotal = document.getElementById('modal-grand-total');
+        if (modalGrandTotal) {
+            modalGrandTotal.textContent = `${Currency} ${grandTotal.toFixed(2)}`;
+        }
+    }
+
+    updateCartButton();
+}
+
+        function updateCartButton() {
+            const cartButton = document.getElementById('cartButton');
+            const totalItems = Object.values(cart).reduce((a, b) => a + b, 0);
+            const totalPrice = Object.entries(cart).reduce((total, [index, quantity]) => {
+                return total + (products[index].price * quantity);
+            }, 0);
+
+            if (totalItems > 0) {
+                cartButton.style.display = 'block';
+                cartButton.textContent = `Proceed to Cart (${totalItems} items, ${Currency} ${totalPrice.toFixed(2)})`;
+            } else {
+                cartButton.style.display = 'none';
+            }
+        }
+
+        function clearCart() {
+    cart = {};
+    // Update quantity displays in product cards
+    products.forEach((product, index) => {
+        const quantitySpan = document.getElementById(`quantity-${index}`);
+        if (quantitySpan) {
+            quantitySpan.textContent = '0';
+        }
+    });
+    updateCartButton();
+
+    // Hide the cart modal
+    const cartModal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+    if (cartModal) {
+        cartModal.hide();
+    }
+}
+
+
+function showCartModal() {
+    const modalBody = document.getElementById('cartModalBody');
+    let cartContent = '<ul class="list-group">';
+    let total = 0;
+
+    for (const [index, quantity] of Object.entries(cart)) {
+        const product = products[index];
+        const itemTotal = product.price * quantity;
+        total += itemTotal;
+        cartContent += 
+            `<li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="btn btn-sm btn-outline-secondary me-2" onclick="changeQuantity(${index}, -1)">-</button>
+                    <span id="modal-quantity-${index}">${quantity}</span>
+                    <button class="btn btn-sm btn-outline-secondary ms-2" onclick="changeQuantity(${index}, 1)">+</button>
+                    ${product.code}  
+                    <span class="text-primary">${Currency} ${product.price.toFixed(2)} ${product.kg && product.kg !== 1 ? `/Kg` : ''}</span>
+                </div>
+                <span id="modal-total-${index}">${Currency} ${itemTotal.toFixed(2)}</span>
+            </li>`;
+    }
+
+    cartContent += 
+        `<li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+            Total
+            <span id="modal-grand-total">${Currency} ${total.toFixed(2)}</span>
+        </li>
+    </ul>`;
+
+    modalBody.innerHTML = cartContent;
+
+    const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+    cartModal.show();
+}
+
+        function searchProducts() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const productCards = document.querySelectorAll('.product-card');
+
+    productCards.forEach((card, index) => {
+        const productName = products[index].code.toLowerCase();
+        if (productName.includes(searchInput)) {
+            card.parentElement.style.display = '';
+        } else {
+            card.parentElement.style.display = 'none';
+        }
+    });
+}
+
+        document.getElementById('cartButton').onclick = function () {
+            if (Object.keys(cart).length > 0) {
+                showCartModal();
+            } else {
+                alert('Your cart is empty!');
+            }
+        };
+function generateOrderNumber() {
+    // Create an order number based on current timestamp
+    const now = new Date();
+    const year = now.getFullYear().toString().slice(-2);
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    
+    return `ORD-${year}${month}${day}-${hours}${minutes}${seconds}`;
+}
+
+// Add this function at the beginning
+function setOrderButtonState(isLoading) {
+    const button = document.getElementById('proceedToWhatsApp');
+    if (isLoading) {
+        button.disabled = true;
+        button.innerHTML = `
+            <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+            Processing Order...
+        `;
+    } else {
+        button.disabled = false;
+        button.innerHTML = 'Place Order';
+    }
+}
+
+// Replace the existing proceedToWhatsApp onclick handler with this:
+document.getElementById('proceedToWhatsApp').onclick = async function () {
+    // Validate required fields
+    const name = document.getElementById('nameInput').value.trim();
+    const phone = document.getElementById('phoneInput').value.trim();
+    const email = document.getElementById('emailInput').value.trim();
+    const address = document.getElementById('addressInput').value.trim();
+
+    // Basic validation
+    if (!name) {
+        alert('Please enter your name');
+        return;
+    }
+    if (!phone) {
+        alert('Please enter your phone number');
+        return;
+    }
+    if (!email) {
+        alert('Please enter your email address');
+        return;
+    }
+    if (!address) {
+        alert('Please enter your address');
+        return;
+    }
+
+    // Show loading state
+    setOrderButtonState(true);
+
+    // Generate order number
+    const orderNumber = generateOrderNumber();
+
+    let formData = new FormData();
+    formData.append('OrderNumber', orderNumber);
+    formData.append('Name', name);
+    formData.append('Phone', phone);
+    formData.append('Email', email);
+    formData.append('Address', address);
+    formData.append('formGoogleSendEmail', shopEmail);
+
+    // Add order details
+    let orderDetails = `Order Number: ${orderNumber}\n\nOrder Details:\n`;
+    let total = 0;
+    let orderItems = [];
+    for (const [index, quantity] of Object.entries(cart)) {
+        const product = products[index];
+        const itemTotal = product.price * quantity;
+        total += itemTotal;
+        orderDetails += `${quantity}x ${product.code} - ${Currency} ${product.price.toFixed(2)} each = ${Currency} ${itemTotal.toFixed(2)}\n`;
+        orderItems.push(`${quantity}x ${product.code}`);
+    }
+    orderDetails += `\nTotal: ${Currency} ${total.toFixed(2)}`;
+    formData.append('Order', orderDetails);
+    formData.append('Status', 'Pending');
+    formData.append('OrderStatusLink', `${OrderDetailsURL}${orderNumber}`);
+
+    try {
+        // Send to Google Apps Script
+        const response = await fetch('https://script.google.com/macros/s/AKfycbywEnaIsy3rN0KwuPmOYXegnR9nv0vUNMjIRPe13dLa1ff5EbYuHBnyKCK3YDUD5Zht/exec', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const data = await response.json();
+        
+        if (data.result === 'success') {
+            // Construct WhatsApp message
+            const message = `Order Number: ${orderNumber}\n\nOrder Details:
+                Name: ${name}
+                Phone: ${phone}
+                Email: ${email}
+                ${address ? `Address: ${address}\n` : ''}
+                ${orderDetails}
+                
+                Shipment Status: ${OrderDetailsURL}${orderNumber}
+            `;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappLink = `https://wa.me/${Phone}?text=${encodedMessage}`;
+            
+            // Reset button state before opening WhatsApp
+            setOrderButtonState(false);
+            
+            // Open WhatsApp and clear cart
+            window.open(whatsappLink, '_blank');
+            clearCart();
+            
+            // Close the modal
+            const cartModal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+            if (cartModal) {
+                cartModal.hide();
+            }
+        } else {
+            throw new Error('Order submission failed');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Order submission failed. Please try again.');
+        setOrderButtonState(false);
+    }
+};
+
+
+        gapi.load('client', initClient);
+		document.getElementById('searchInput').oninput = debounce(filterProducts, 300);
     </script>
 </body>
 </html>
+
 
 
